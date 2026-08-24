@@ -201,6 +201,52 @@
     margin:0;
   }
 
+  /* ---------- Filled slots (link out to an activity page) ---------- */
+  .slot-filled{
+    border:1px solid var(--line);
+    border-radius:12px;
+    background:var(--paper);
+    padding:22px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .slot-eyebrow{
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--blue-600);
+    margin:0;
+  }
+  .slot-filled-title{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:19px;
+    margin:0;
+    color:var(--ink);
+  }
+  .slot-filled-desc{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.6;
+    margin:0;
+    max-width:60ch;
+  }
+  .slot-link-btn{
+    align-self:flex-start;
+    font-family:var(--mono);
+    font-size:12.5px;
+    letter-spacing:0.03em;
+    background:var(--blue-600);
+    color:#fff;
+    text-decoration:none;
+    border-radius:999px;
+    padding:10px 20px;
+    transition:background 0.15s ease;
+  }
+  .slot-link-btn:hover{ background:#255a89; }
+
   /* ---------- Legend ---------- */
   .legend{
     display:flex;
@@ -323,12 +369,11 @@
       </summary>
       <div class="unit-body">
         <div class="slot" id="unit-2-slot-1">
-          <div class="slot-placeholder">
-            <span class="glyph">1</span>
-            <div class="slot-placeholder-text">
-              <p class="slot-label">Slot 1</p>
-              <p class="slot-hint">Ready for your activity's HTML.</p>
-            </div>
+          <div class="slot-filled">
+            <p class="slot-eyebrow">U.S. Const. &middot; Amend. I</p>
+            <h3 class="slot-filled-title">The First Amendment in Schools</h3>
+            <p class="slot-filled-desc">An interactive walk through speech, press, religion, and assembly rights for students, one Supreme Court case at a time &mdash; five landmark cases, from Tinker to Morse.</p>
+            <a class="slot-link-btn" href="Unit2A.html">Open Activity &rarr;</a>
           </div>
         </div>
         <div class="slot" id="unit-2-slot-2">
