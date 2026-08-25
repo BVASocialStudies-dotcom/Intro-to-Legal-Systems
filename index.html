@@ -200,6 +200,15 @@
     color:var(--ink-soft);
     margin:0;
   }
+  a.slot-placeholder{
+    text-decoration:none;
+    color:inherit;
+    transition:border-color 0.15s ease, background 0.15s ease;
+  }
+  a.slot-placeholder:hover{
+    border-color:var(--blue-400);
+    background:var(--paper-dim);
+  }
 
   /* ---------- Legend ---------- */
   .legend{
@@ -323,13 +332,13 @@
       </summary>
       <div class="unit-body">
         <div class="slot" id="unit-2-slot-1">
-          <div class="slot-placeholder">
+          <a class="slot-placeholder" href="Unit2A.html">
             <span class="glyph">1</span>
             <div class="slot-placeholder-text">
               <p class="slot-label">Slot 1</p>
-              <p class="slot-hint">Ready for your activity's HTML.</p>
+              <p class="slot-hint"><strong>Unit 2A: The First Amendment in Schools</strong> &mdash; open the activity.</p>
             </div>
-          </div>
+          </a>
         </div>
         <div class="slot" id="unit-2-slot-2">
           <div class="slot-placeholder">
